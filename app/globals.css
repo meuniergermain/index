@@ -37,6 +37,10 @@
   }
 }
 
+html {
+  font-family: var(--font-inter);
+}
+
 body,
 html,
 #__next {
@@ -222,6 +226,7 @@ body {
   width: 100%;
   height: 100%;
   pointer-events: none;
+  font-family: var(--font-roboto);
 }
 
 .panel-content-holder-active {
