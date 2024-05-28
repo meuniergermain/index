@@ -4,17 +4,21 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  --background: rgb(21, 21, 21);
+  --eva-opacity: 1;
+  --eva0: rgba(153, 92, 208, 0.1);
+  --eva1: rgba(142, 223, 95, 0.15);
+  --eva2: rgba(236, 119, 68, 0.15);
+  --eva3: rgba(85, 73, 183, 1);
+  --eva4: rgba(32, 29, 48, 1);
+  --background: rgb(14,14,16);
   --titles: rgb(255, 255, 255);
   --menu: rgba(25, 27, 31, 1);
   --menu2: rgba(25, 27, 31, 0.8);
-  --accent: rgb(153,92,208);
+  --accent: rgb(153, 92, 208);
   --button-text: rgba(255, 255, 255, 0.7);
   --button-text-hover: var(--accent);
   --button-text-active: rgb(255, 255, 255);
-  --button-text-selected: rgb(142,223,95);
+  --button-text-selected: rgb(142, 223, 95);
 }
 
 /*
@@ -59,6 +63,11 @@ body {
   left: -15px;
   z-index: -1;
 }
+
+.gradient-background {
+  background: linear-gradient(110deg, var(--background) 22%, var(--eva2) 27%, var(--eva1) 29%, var(--eva0) 34%, var(--background) 40%, var(--background) 70%, var(--eva0) 90%, var(--eva1) 95%, var(--eva2) 100%);
+}
+
 
 .transitions {
   transition-property: all;

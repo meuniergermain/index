@@ -176,8 +176,8 @@ const measurePerformance = () => {
             const duration = end - start;
             const averageFrameTime = duration / frameCount;
             const isPerformanceOkay = averageFrameTime < 16.67; // Approximately 60 FPS
-            if (!isPerformanceOkay && gridSize < 90 && !isPerformanceAdjusted) {
-                setGridSize(gridSize * 1.5); // Adjust gridSize if performance is not sufficient
+            if (!isPerformanceOkay && gridSize < 160 && !isPerformanceAdjusted) {
+                setGridSize(gridSize + 10); // Adjust gridSize if performance is not sufficient
                 setIsPerformanceAdjusted(true); // Mark performance as adjusted
             } else {
                 setIsPerformanceOkay(isPerformanceOkay);
@@ -210,7 +210,7 @@ const measurePerformance = () => {
 		};
 	}, [isPerformanceOkay, gridSize]);
 
-	return <canvas ref={canvasRef} className="DotCanvas" />;
+	return <canvas ref={canvasRef} className="DotCanvas gradient-background" />;
 };
 
 export default DotCanvas;
