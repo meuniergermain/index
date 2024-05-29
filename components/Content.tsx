@@ -32,7 +32,7 @@ export default function Content() {
 			<div id="main-body" className="transitions">
 				<div id="titles">
 					<h1 className={`titles-h1 transitions ${Panel ? 'titles-h1-active' : 'titles-h1-inactive'}`}>Germain Meunier</h1>
-					<h2 className={`titles-h2 transitions ${Panel ? 'titles-h2-active' : 'titles-h2-inactive'}`}>Web dev hobbyist</h2>
+					<h2 className={`titles-h2 transitions ${Panel ? 'titles-h2-active' : 'titles-h2-inactive'}`}>Aspirant Développeur Web</h2>
 				</div>
 
 
