@@ -41,7 +41,7 @@ export default function Content() {
 					</div>
 				</div>
 				<div id="buttons-bar" className="transitions">
-					<button className={`button button-side transitions ${Panel ? 'button-active' : 'button-inactive'} ${About ? 'button-selected-panel' : ''}`} onClick={() => handleClick(setAbout, About)} type="button">About</button>
+					<button className={`button button-side transitions ${Panel ? 'button-active' : 'button-inactive'} ${About ? 'button-selected-panel' : ''}`} onClick={() => handleClick(setAbout, About)} type="button">À propos</button>
 					<button className={`button button-main transitions ${Panel ? 'button-active' : 'button-inactive'} ${Contact ? 'button-selected-panel' : ''}`} onClick={() => handleClick(setContact, Contact)} type="button">Contact</button>
 					<button className={`button button-side transitions ${Panel ? 'button-active' : 'button-inactive'} ${Projects ? 'button-selected-panel' : ''}`} onClick={() => handleClick(setProjects, Projects)} type="button">Projets</button>
 				</div>
@@ -49,7 +49,7 @@ export default function Content() {
 				<div id="panel-content-holder" className={`${Panel ? 'panel-content-active' : 'panel-content-inactive'}`}>
 					<div className={`panel-content transitions ${About ? 'pointer-events-auto panel-content-active' : 'pointer-events-none panel-content-inactive'}`}>
 						<div className="content-text text-white text-justify md:text-xl">
-							<h2 className={`text-yellow-400 mb-5 text-2xl md:text-4xl`}>About</h2>
+							<h2 className={`text-yellow-400 mb-5 text-2xl md:text-4xl`}>À propos</h2>
 							<p className='leading-loose'>Je m'appelle Germain Meunier. Passionné par les technologies numériques depuis de nombreuses années, j'ai récemment entrepris une reconversion professionnelle pour devenir développeur web.<br />
 								Je suis à la recherche d'une alternance qui me permettrait de suivre une vocation qui me tient à coeur où j'assurerai le sérieux et la ténacité.<br />
 								Ce site a été créé avec Next.js et la physique derrière la grille de points avec ChatGPT-4o.
@@ -62,7 +62,7 @@ export default function Content() {
 							<ul className='list-disc leading-loose list-inside'>
 								<li><Link className='hover:text-purple-400' href={"mailto:meunier.germain@gmail.com"}>Mon adresse mail</Link></li>
 								<li><Link className='hover:text-purple-400' href={"https://github.com/meuniergermain"}>Mon Github</Link></li>
-								<li>LinkedIn (prochainement)</li>
+								<li><Link className='hover:text-purple-400' href={"www.linkedin.com/in/germain-meunier-033760310"}>LinkedIn</Link></li>
 							</ul>
 						</div>
 					</div>
